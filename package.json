@@ -1,0 +1,15 @@
+{
+  "type": "module",
+  "scripts": {
+    "build": "esbuild src/index.js src/worker.js --bundle --outdir=build",
+    "build:watch": "esbuild src/index.js src/worker.js --watch --bundle --outdir=build",
+    "serve": "esbuild src/index.js src/worker.js --watch --serve --bundle --outdir=build --servedir=."
+  },
+  "dependencies": {
+    "@sanjo/array": "^1.4.0",
+    "@sanjo/write-json": "^1.0.0"
+  },
+  "devDependencies": {
+    "esbuild": "^0.19.4"
+  }
+}
