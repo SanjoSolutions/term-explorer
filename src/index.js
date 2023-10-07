@@ -10,7 +10,7 @@ input.addEventListener("keyup", () => {
     terms.innerHTML = ""
   }
   if (input.value.length >= 1) {
-    worker = new Worker("/build/worker.js")
+    worker = new Worker("build/worker.js")
 
     worker.onmessage = (event) => {
       const batch = event.data
